@@ -20,9 +20,6 @@ A modern and secure password generator built using HTML, CSS, and JavaScript. Th
 * CSS3
 * JavaScript (ES6)
 
-## 📸 Preview
-
-Add a screenshot of your project here.
 
 ## 🎯 How It Works
 
