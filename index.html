@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Smart Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <button id="themeBtn" onclick="toggleTheme()">
+    🌙
+</button>
+<div class="container">
+
+    <h1>🔐 Smart Password Generator</h1>
+
+    <input type="text" id="name" placeholder="Enter Name">
+
+    <input type="text" id="color" placeholder="Favorite Color">
+
+    <input type="text" id="animal" placeholder="Favorite Animal">
+
+    <label>
+    Password Length:
+    <span id="lengthValue">10</span>
+</label>
+
+    <input type="range" id="length" min="8" max="30" value="16">
+
+    <button onclick="generatePassword()">
+        🔄Generate Password
+    </button>
+
+    <div class="password-box">
+    <input type="password" id="password" readonly>
+
+    <button onclick="togglePassword()">
+        👁
+    </button>
+
+    <button onclick="copyPassword()">
+        copy
+    </button>
+</div>
+
+    <div class="strength">
+        Strength:
+        <span id="strengthText">-</span>
+    </div>
+
+    
+
+<div class="strength-bar">
+    <div id="bar"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
